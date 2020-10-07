@@ -10,7 +10,8 @@ public class PalindromeChecker {
 
     /**
      * Checks whether the given string is a palindrome. A string is considered a palindrome if it
-     * reads the same forwards and backwards once all non-alphanumeric characters are removed.
+     * reads the same forwards and backwards, ignoring case, once all non-alphanumeric characters
+     * are removed.
      *
      * @param s the string to check
      * @return true if the string is a palindrome, false otherwise
