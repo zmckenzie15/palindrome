@@ -16,4 +16,23 @@ public class PalindromeCheckerTest {
     void isPalindromeParam(String input, String expected) {
         assertTrue(PalindromeChecker.isPalindrome(input));
     }
+
+    @ParameterizedTest
+    @ValueSource(strings = {"Ama", "Wow", "reddER"})
+    void isPalindrome_True_DifferingCase(String s) {
+        assertTrue(PalindromeChecker.isPalindrome(s));
+    }
+
+    @ParameterizedTest
+    @ValueSource(strings = {"my gym", "top spot", "step on no pets"})
+    void isPalindrome_True_HavingSpaces(String s) {
+        assertTrue(PalindromeChecker.isPalindrome(s));
+    }
+
+    @ParameterizedTest
+    @ValueSource(strings = {"WOW!!!", "I did, did I?", "?!"})
+    void isPalindrome_True_HavingPunctuationAndSpaces(String s) {
+        assertTrue(PalindromeChecker.isPalindrome(s));
+    }
+
 }
