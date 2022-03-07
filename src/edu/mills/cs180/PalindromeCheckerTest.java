@@ -8,7 +8,7 @@ import org.junit.jupiter.params.provider.*;
 public class PalindromeCheckerTest {
     @Test
     void isPalindrome_True_EmptyString() {
-        assertTrue(PalindromeChecker.isPalindrome("abbac"));
+        assertTrue(PalindromeChecker.isPalindrome("abba"));
     }
 
     @ParameterizedTest
